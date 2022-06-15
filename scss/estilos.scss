@@ -388,7 +388,7 @@ ul li .mdi::before {
 }
 
 .rd-navbar-static .rd-navbar-dropdown {
-  z-index: 2 !important;
+  z-index: 5 !important;
 }
 
 .rd-navbar-fixed .rd-navbar-submenu {
@@ -589,7 +589,7 @@ ul li .mdi::before {
 }
 
 .detalle{
-  z-index: 15;
+  z-index: 10;
 }
 
 @keyframes animate{
