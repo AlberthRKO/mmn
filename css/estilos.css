@@ -12548,6 +12548,7 @@ ul li .mdi::before {
 }
 
 .alerta {
+  width: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#003353), to(#15152f)) !important;
   background: linear-gradient(#003353, #15152f) !important;
   border-radius: 15px;
@@ -12562,6 +12563,70 @@ ul li .mdi::before {
 .form-check-input:focus {
   -webkit-box-shadow: 0 0 0 0.25rem rgba(255, 110, 0, 0.25);
           box-shadow: 0 0 0 0.25rem rgba(255, 110, 0, 0.25);
+}
+
+/* ------------------------
+* Seccion de Recibo
+--------------------------- */
+.detalle-upload {
+  z-index: 10;
+}
+
+::-webkit-file-upload-button {
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(#003353), to(#15152f)) !important;
+  background: linear-gradient(#003353, #15152f) !important;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.btn:hover {
+  color: white;
+  background: #ff6e00;
+  background: -webkit-gradient(linear, left top, right top, from(#ff6e00), to(#e67d2d));
+  background: linear-gradient(to right, #ff6e00, #e67d2d);
+}
+
+.btn-primario {
+  background: #ff6e00;
+  background: -webkit-gradient(linear, left top, right top, from(#fe7414), to(#fe3111));
+  background: linear-gradient(to right, #fe7414, #fe3111);
+  color: white;
+}
+
+/* ----------------------
+* Estilos de las tablas
+----------------------- */
+table th, table td {
+  padding: 15px 20px;
+}
+
+table tbody {
+  border: none !important;
+}
+
+.table {
+  margin-bottom: 0.5rem;
+}
+
+tr {
+  background-color: #15152f;
+  border: none;
+  color: white;
+  margin-bottom: 2px;
+  border-top: 10px solid black;
+}
+
+tr:hover, tr:hover tbody {
+  color: white;
+  background-color: #003353;
+}
+
+thead tr {
+  background: -webkit-gradient(linear, left top, right top, from(#5e0a2e), to(#02121f)) !important;
+  background: linear-gradient(to right, #5e0a2e, #02121f) !important;
 }
 
 /* -----------------------------

@@ -14,6 +14,8 @@ $gradient1: #003353;
 $gradient2: #15152f;
 $brillante: #ff6e00;
 $brillante2: #e67d2d;
+$buttongradiante1: #fe7414;
+$buttongradiante2: #fe3111;
 $text-primary: #303036;
 $text-secondary: #63636b;
 $primary-color: #ffffff;
@@ -634,6 +636,7 @@ ul li .mdi::before {
 // }
 
 .alerta{
+  width: 100%;
   background:linear-gradient($gradient1,$gradient2) !important;
   border-radius: 15px;
   font-size: 12px;
@@ -648,6 +651,66 @@ ul li .mdi::before {
 
 
 
+/* ------------------------
+* Seccion de Recibo
+--------------------------- */
+
+.detalle-upload{
+  z-index: 10;
+}
+::-webkit-file-upload-button{
+  color: white;
+  background:linear-gradient($gradient1,$gradient2) !important;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.btn:hover{
+  color: white;
+  background: $brillante;
+  background: linear-gradient(to right, $brillante, $brillante2);
+}
+
+.btn-primario{
+  background: $brillante;
+  background: linear-gradient(to right, $buttongradiante1, $buttongradiante2);
+  color: white;
+}
+
+
+/* ----------------------
+* Estilos de las tablas
+----------------------- */
+table{
+  th, td {
+    padding:15px 20px;
+    
+  }
+  tbody{
+    border: none !important;
+  }
+}
+.table{
+  margin-bottom: 0.5rem;
+}
+
+
+tr{
+  background-color: $gradient2;
+  border:none;
+  color: white;
+  margin-bottom: 2px;
+  border-top: 10px solid black;
+}
+tr:hover, tr:hover tbody{
+  color: white;
+  background-color: $gradient1;
+}
+thead tr{
+  background: linear-gradient(to right, #5e0a2e, #02121f) !important;
+}
 
 
 

@@ -21,7 +21,7 @@
 
     <link rel="stylesheet" href="css/estilos.css" />
 
-    <title>MMN-Saque</title>
+    <title>MMN-Enviar Recibo</title>
 </head>
 
 <body style="height: 100vh;">
@@ -195,40 +195,33 @@
                     <div class="text-center position-relative d-flex align-items-center justify-content-center">
                         <img src="images/arrow_orange.png" alt="flecha" class=" img-fluid position-absolute start-0"
                             width="100">
-                        <h1 class="display-5 text-white fw-bold">Saque</h1>
+                        <h1 class="display-5 text-white fw-bold">Enviar Recibo</h1>
                     </div>
                     <div class="content py-4 px-4 position-relative">
 
                         <div class="detalle position-relative">
                             <p class="alerta p-2 text-white text-center text-small">
-                                Para solicitar el retiro, ingrese los campos a continuación. Recordando que el monto
-                                mínimo para el retiro de ingresos es de R$ 2,00 y la indicación es de R$ 250,00 . Se
-                                deducirá una tarifa del 10% del retiro.
-                                Después de solicitar el retiro, podrá ver el descuento en su estado de cuenta.
+                                Para activar tu plan más rápido, envíanos el comprobante de pago de tu factura,
+                                escribiendo en el comprobante el ID de factura con la fecha de pago a bolígrafo . Si
+                                envía un nuevo recibo, el último será reemplazado por el nuevo.
                             </p>
-                            <div class="opciones pt-3 d-md-flex justify-content-evenly align-items-md-center">
+                            <div class="opciones pt-3 d-md-flex justify-content-center align-items-md-center">
 
-                                <h6 class="m-md-0 fw-bolder">Que quieres retirar?</h6>
-                                <div class="form-check">
-                                    <input class="form-check-input float-none float-md-start" type="radio"
-                                        name="flexRadioDefault" id="flexRadioDefault1">
-                                    <label class="form-check-label" for="flexRadioDefault1">
-                                        Renta <span class="fw-bold">(R$0,98)</span>
-                                    </label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input float-none float-md-start" type="radio"
-                                        name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                    <label class="form-check-label" for="flexRadioDefault2">
-                                        Indicación <span class="fw-bold">(BRL 0,00)</span>
-                                    </label>
+                                <h6 class="m-md-0 pe-md-3 fw-bolder">Prueba</h6>
+                                <div class="form-group content position-relative p-3">
+                                    <input id="recibo" class="detalle-upload" type="file" name="">
                                 </div>
                             </div>
+                            <button type="submit" class="btn btn-primario mt-3 fw-semibold">Enviar Prueba</button>
+
+
                         </div>
                     </div>
-
                 </div>
             </div>
+
+        </div>
+        </div>
         </div>
     </section>
 
