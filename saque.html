@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet" />
+
+
+
+    <!--  * Instalando css de rd navbar -->
+    <link rel="stylesheet" href="libs/rd-navbar/dist/css/rd-navbar.css" />
+
+    <!-- * iconos fontawesome 5 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="libs/aos/aos.css">
+
+    <link rel="stylesheet" href="css/estilos.css" />
+
+    <title>MMN-Saque</title>
+</head>
+
+<body style="height: 100vh;">
+    <!-- * Para el menu de navegacion e info arriba debe estar dentro de una etiqueta rd-navbar-wrap -->
+
+    <header class="sliderss">
+
+        <div class="rd-navbar-wrap">
+            <nav class="rd-navbar">
+                <div class="encabezado">
+                    <div class="rd-navbar-inner px-0">
+                        <div class="rd-navbar-panel py-0">
+                            <button class="rd-navbar-toggle toggle-original"
+                                data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                                <span></span>
+                            </button>
+                            <!-- <button data-rd-navbar-toggle=".rd-navbar, .form-search-wrap" class="rd-navbar-search-toggle">
+                <span></span>
+              </button> -->
+                            <button class="rd-navbar-collapse-toggle toggle-original"
+                                data-rd-navbar-toggle=".rd-navbar-collapse">
+                                <span></span>
+                            </button>
+                            <div class="rd-navbar-collapse">
+                                <div class="container-lg">
+                                    <div class="row justify-content-between">
+                                        <div class="col-auto">
+                                            <ul class="list-unstyled mb-0">
+                                                <li class="">
+                                                    <span class="mdi mdi-gmail align-middle"></span>
+                                                    orlando.alb
+                                                </li>
+                                                <li>
+                                                    <span class="mdi mdi-phone align-middle"></span>
+                                                    +591 67981983
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-lg-auto mt-lg-0 mt-2">
+                                            <ul
+                                                class="d-flex justify-content-evenly justify-content-lg-center mx-auto list-unstyled mb-0">
+                                                <li>
+                                                    <i class="mdi mdi-facebook align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="mdi mdi-instagram align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="mdi mdi-linkedin align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="mdi mdi-twitter align-middle"></i>
+                                                </li>
+                                                <li>
+                                                    <i class="mdi mdi-whatsapp align-middle"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
+                                <span></span>
+                            </button>
+                            <!-- <div class="rd-navbar-search-wrap">
+                <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
+                  <span></span>
+                </button>
+                <div class="rd-navbar-search">
+                  <form action="" method="post">
+                    <div class="form-group">
+                      <input id="rd-navbar-search-input" type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="material-icons-search"></button>
+                  </form>
+                </div>
+              </div>
+                 -->
+                        </div> <!-- rd-navbar-inner -->
+                    </div>
+                </div> <!-- encabezado -->
+                <!-- * Etiqueta hermana del contenido desplegable-->
+                <div class="rd-navbar-outer">
+                    <div class="rd-navbar-inner">
+                        <div class="rd-navbar-panel-canvas"></div>
+                        <div class="container">
+                            <div class="row justify-content-between align-items-center">
+                                <div class="col-2">
+                                    <img src="images/logo.png" alt="Logo" class="img-fluid rd-navbar-brand" width="250">
+                                </div>
+                                <div class="col-auto">
+                                    <div class="rd-navbar-menu-wrap">
+                                        <div class="rd-navbar-nav-wrap">
+                                            <ul class="rd-navbar-nav list-unstyled mb-0">
+                                                <li><a href="index.html">Home</a>
+
+                                                </li>
+                                                <li>
+                                                    <a href="#about">Redes</a>
+
+                                                    <!-- RD Navbar Dropdown -->
+                                                    <ul class="rd-navbar-dropdown twodrop list-unstyled">
+                                                        <li>
+                                                            <a href="saque.html">Saque</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Lorem ipsum dolor</a>
+                                                            <ul class="rd-navbar-dropdown list-unstyled">
+                                                                <li>
+                                                                    <a href='#'>Lorem ipsum dolor</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href='#'>Nulla sequi, sint</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href='#'>Corporis, quos, sit</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#">Dolor sit amet</a>
+                                                        </li>
+                                                    </ul>
+                                                    <!-- END RD Navbar Dropdown -->
+
+                                                </li>
+                                                <li>
+                                                    <!-- crando un submenu -->
+                                                    <a href="#">Pendiente</a>
+                                                    <ul class="rd-navbar-dropdown list-unstyled">
+                                                        <li><a href="#">Datos pendientes</a></li>
+                                                        <li><a href="#">Soporte</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="rd-navbar-search-wrap">
+                                        <div class="rd-navbar-search">
+                                            <form action="#" method="post">
+                                                <div class="form-group">
+                                                    <input id="rd-navbar-search-input" type="text" class="form-control"
+                                                        placeholder="Buscar...">
+                                                </div>
+                                                <button type="submit" class="mdi mdi-magnify"></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="divider"></div>
+    <section id="saque" class=" header-portada d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-10 p-3">
+                    <div class="text-center position-relative d-flex align-items-center justify-content-center">
+                        <img src="images/arrow_orange.png" alt="flecha" class=" img-fluid position-absolute start-0"
+                            width="100">
+                        <h1 class="display-5 text-white fw-bold">Saque</h1>
+                    </div>
+                    <div class="content py-4 px-4 position-relative">
+
+                        <div class="detalle position-relative">
+                            <p class="alerta p-2 text-white text-center text-small">
+                                Para solicitar el retiro, ingrese los campos a continuación. Recordando que el monto
+                                mínimo para el retiro de ingresos es de R$ 2,00 y la indicación es de R$ 250,00 . Se
+                                deducirá una tarifa del 10% del retiro.
+                                Después de solicitar el retiro, podrá ver el descuento en su estado de cuenta.
+                            </p>
+                            <div class="opciones pt-3 d-md-flex justify-content-evenly align-items-md-center">
+
+                                <h6 class="m-md-0">Que quieres retirar?</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input float-none float-md-start" type="radio"
+                                        name="flexRadioDefault" id="flexRadioDefault1">
+                                    <label class="form-check-label" for="flexRadioDefault1">
+                                        Renta <span class="fw-bold">(R$0,98)</span>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input float-none float-md-start" type="radio"
+                                        name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                    <label class="form-check-label" for="flexRadioDefault2">
+                                        Indicación <span class="fw-bold">(BRL 0,00)</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libs/popper.js/popper.min.js"></script>
+
+    <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="libs/rd-navbar/dist/js/jquery.rd-navbar.min.js"></script>
+
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
+    <script src="libs/aos/aos.js"></script>
+
+    <script src="js/mis-scripts.js"></script>
+</body>
+
+</html>

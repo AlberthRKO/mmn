@@ -11969,7 +11969,7 @@ fieldset:disabled .btn {
 }
 
 body {
-  background: url("../images/back_principal.png") center center/cover;
+  background: url("../images/back-desktop.jpg") center center/cover;
   color: #ffffff;
 }
 
@@ -11986,8 +11986,8 @@ body {
 }
 
 .btn-primary {
-  background: -webkit-gradient(linear, left top, right top, from(#1859b4), to(#0467f1));
-  background: linear-gradient(to right, #1859b4 0%, #0467f1 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#003353), to(#15152f));
+  background: linear-gradient(to right, #003353 0%, #15152f 100%);
   position: relative;
   overflow: hidden;
   -webkit-transition: 0.4s ease;
@@ -12020,7 +12020,7 @@ body {
 }
 
 .btn.btn-primary .expansor {
-  background: #1859b4;
+  background: #003353;
 }
 
 .btn:hover .expansor {
@@ -12482,6 +12482,88 @@ ul li .mdi::before {
   }
 }
 
+/*---------------------------------
+//  * Seccion de Saque
+-----------------------------------*/
+.content {
+  background: rgba(0, 0, 0, 0.5) !important;
+  overflow: hidden;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+}
+
+.content::before {
+  content: '';
+  position: absolute;
+  margin: auto;
+  width: 150%;
+  height: 150%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#003353), to(#73092B));
+  background: linear-gradient(#003353, #73092B);
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+.content::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: black;
+  border-radius: 16px;
+}
+
+.detalle {
+  z-index: 15;
+}
+
+@-webkit-keyframes animate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.alerta {
+  background: -webkit-gradient(linear, left top, left bottom, from(#003353), to(#15152f)) !important;
+  background: linear-gradient(#003353, #15152f) !important;
+  border-radius: 15px;
+  font-size: 12px;
+}
+
+.form-check-input:checked {
+  background-color: #ff6e00 !important;
+  border-color: #ff6e00 !important;
+}
+
+.form-check-input:focus {
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(255, 110, 0, 0.25);
+          box-shadow: 0 0 0 0.25rem rgba(255, 110, 0, 0.25);
+}
+
 /* -----------------------------
  *Seccion del slider 
 -------------------------------- */
@@ -12579,8 +12661,8 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   color: #ffffff;
   width: 6rem;
   height: 6rem;
-  background: -webkit-gradient(linear, left top, right top, from(#1859b4), to(#0467f1));
-  background: linear-gradient(to right, #1859b4 0%, #0467f1 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#003353), to(#15152f));
+  background: linear-gradient(to right, #003353 0%, #15152f 100%);
 }
 
 .content-icon .mdi::before {
@@ -12651,8 +12733,8 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   content: "";
   position: absolute;
   right: 0;
-  background: -webkit-gradient(linear, left top, right top, from(#1859b4), to(#0467f1));
-  background: linear-gradient(to right, #1859b4 0%, #0467f1 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#003353), to(#15152f));
+  background: linear-gradient(to right, #003353 0%, #15152f 100%);
   -webkit-box-shadow: 2px 4px 20px 1px rgba(45, 45, 45, 0.13);
           box-shadow: 2px 4px 20px 1px rgba(45, 45, 45, 0.13);
   border-radius: 50%;
