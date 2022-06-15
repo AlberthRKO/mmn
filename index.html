@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet" />
+
+
+
+  <!--  * Instalando css de rd navbar -->
+  <link rel="stylesheet" href="libs/rd-navbar/dist/css/rd-navbar.css" />
+
+  <!-- * iconos fontawesome 5 -->
+  <link rel="stylesheet" href="libs/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="libs/animate.css/animate.min.css">
+  <link rel="stylesheet" href="libs/aos/aos.css">
+
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <title>Jobs</title>
+</head>
+
+<body style="height: 100vh;">
+  <!-- * Para el menu de navegacion e info arriba debe estar dentro de una etiqueta rd-navbar-wrap -->
+
+  <header class="sliderss">
+
+    <div class="rd-navbar-wrap">
+      <nav class="rd-navbar">
+        <div class="encabezado">
+          <div class="rd-navbar-inner px-0">
+            <div class="rd-navbar-panel py-0">
+              <button class="rd-navbar-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
+                <span></span>
+              </button>
+              <!-- <button data-rd-navbar-toggle=".rd-navbar, .form-search-wrap" class="rd-navbar-search-toggle">
+                <span></span>
+              </button> -->
+              <button class="rd-navbar-collapse-toggle toggle-original" data-rd-navbar-toggle=".rd-navbar-collapse">
+                <span></span>
+              </button>
+              <div class="rd-navbar-collapse">
+                <div class="container-lg">
+                  <div class="row justify-content-between">
+                    <div class="col-auto">
+                      <ul class="list-unstyled mb-0">
+                        <li class="">
+                          <span class="mdi mdi-gmail align-middle"></span>
+                          orlando.alb
+                        </li>
+                        <li>
+                          <span class="mdi mdi-phone align-middle"></span>
+                          +591 67981983
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-12 col-lg-auto mt-lg-0 mt-2">
+                      <ul class="d-flex justify-content-evenly justify-content-lg-center mx-auto list-unstyled mb-0">
+                        <li>
+                          <i class="mdi mdi-facebook align-middle"></i>
+                        </li>
+                        <li>
+                          <i class="mdi mdi-instagram align-middle"></i>
+                        </li>
+                        <li>
+                          <i class="mdi mdi-linkedin align-middle"></i>
+                        </li>
+                        <li>
+                          <i class="mdi mdi-twitter align-middle"></i>
+                        </li>
+                        <li>
+                          <i class="mdi mdi-whatsapp align-middle"></i>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
+                <span></span>
+              </button>
+              <!-- <div class="rd-navbar-search-wrap">
+                <button class="rd-navbar-search-toggle" data-rd-navbar-toggle=".rd-navbar-search">
+                  <span></span>
+                </button>
+                <div class="rd-navbar-search">
+                  <form action="" method="post">
+                    <div class="form-group">
+                      <input id="rd-navbar-search-input" type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="material-icons-search"></button>
+                  </form>
+                </div>
+              </div>
+                 -->
+            </div> <!-- rd-navbar-inner -->
+          </div>
+        </div> <!-- encabezado -->
+        <!-- * Etiqueta hermana del contenido desplegable-->
+        <div class="rd-navbar-outer">
+          <div class="rd-navbar-inner">
+            <div class="rd-navbar-panel-canvas"></div>
+            <div class="container">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-2">
+                  <img src="images/logo.png" alt="Logo" class="img-fluid rd-navbar-brand" width="250">
+                </div>
+                <div class="col-auto">
+                  <div class="rd-navbar-menu-wrap">
+                    <div class="rd-navbar-nav-wrap">
+                      <ul class="rd-navbar-nav list-unstyled mb-0">
+                        <li><a href="#">Home</a>
+
+                        </li>
+                        <li>
+                          <a href="#about">Redes</a>
+
+                          <!-- RD Navbar Dropdown -->
+                          <ul class="rd-navbar-dropdown twodrop list-unstyled">
+                            <li>
+                              <a href="shortcodes.php">Shortcodes</a>
+                            </li>
+                            <li>
+                              <a href="#">Lorem ipsum dolor</a>
+                              <ul class="rd-navbar-dropdown list-unstyled">
+                                <li>
+                                  <a href='#'>Lorem ipsum dolor</a>
+                                </li>
+                                <li>
+                                  <a href='#'>Nulla sequi, sint</a>
+                                </li>
+                                <li>
+                                  <a href='#'>Corporis, quos, sit</a>
+                                </li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a href="#">Dolor sit amet</a>
+                            </li>
+                          </ul>
+                          <!-- END RD Navbar Dropdown -->
+
+                        </li>
+                        <li>
+                          <!-- crando un submenu -->
+                          <a href="#">Pendiente</a>
+                          <ul class="rd-navbar-dropdown list-unstyled">
+                            <li><a href="#">Datos pendientes</a></li>
+                            <li><a href="#">Soporte</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="rd-navbar-search-wrap">
+                    <div class="rd-navbar-search">
+                      <form action="" method="post">
+                        <div class="form-group">
+                          <input id="rd-navbar-search-input" type="text" class="form-control" placeholder="Buscar...">
+                        </div>
+                        <button type="submit" class="mdi mdi-magnify"></button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="divider"></div>
+  <section id="portada" class="header-portada d-flex justify-content-center align-items-center">
+    <div class="container">
+
+      <div class="row align-items-center align-items-xl-start">
+        <div class="col-md-6 col-xl-5" data-aos="zoom-in-right" data-aos-once="true" data-aos-duration="2000">
+          <img src="images/arrow_orange.png" class="img-fluid flecha" alt="flecha" width="150">
+          <h1 class="fw-lighter">
+            Discover Unique <br>
+            and <span class="fw-bold">Incredible</span> <br> rare
+            Digital Art</h1>
+          <p>Buy and Sales 100- Cryptocurrencies with 20- flat currencies has an using bank transfers or your credit.
+          </p>
+        </div>
+        <div class="col-md-6 col-xl-7" data-aos="zoom-in-left" data-aos-once="true" data-aos-duration="2000">
+          <img src="images/cuadro_der_principal.png" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+  <script src="libs/popper.js/popper.min.js"></script>
+
+  <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="libs/rd-navbar/dist/js/jquery.rd-navbar.min.js"></script>
+
+  <script src="libs/swiper/swiper-bundle.min.js"></script>
+  <script src="libs/aos/aos.js"></script>
+  <script src="libs/purecounter/purecounter.js"></script>
+
+  <script src="js/mis-scripts.js"></script>
+</body>
+
+</html>

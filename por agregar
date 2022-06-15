@@ -1,0 +1,44 @@
+<div class="container-lg p-2">
+  <div class="row text-white justify-content-between align-items-center">
+    <div class="col-auto">
+      <ul class="d-flex list-unstyled mb-0">
+
+        <li class="pe-3">
+          <span class="mdi mdi-gmail align-middle"></span>
+          orlando.alb77@gmail.com
+        </li>
+        <li>
+          <span class="mdi mdi-phone align-middle"></span>
+          +591 67981983
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="col-auto">
+                <form action="#" class="bloque-buscar position-relative">
+                  <input class="form-control" type="text" name="buscar" autocomplete="off" id="campobuscar"
+                    placeholder="Buscar">
+                  <button class="btnBuscar" type="submit"><i class="fas fa-search"></i></button>
+                </form>
+              </div> -->
+    <div class="col-auto">
+      <ul class="d-flex list-unstyled mb-0">
+        <li>
+          <i class="mdi mdi-facebook align-middle"></i>
+        </li>
+        <li>
+          <i class="mdi mdi-instagram align-middle"></i>
+        </li>
+        <li>
+          <i class="mdi mdi-linkedin align-middle"></i>
+        </li>
+        <li class=" pe-4">
+          <i class="mdi mdi-twitter align-middle"></i>
+        </li>
+        <li>
+          <i class="mdi mdi-phone align-middle"></i><span>Llamar</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!--  -->
