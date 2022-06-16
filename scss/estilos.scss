@@ -635,8 +635,7 @@ ul li .mdi::before {
 //   background:linear-gradient(to top, #0c002b, #1779ff);
 // }
 
-.alerta{
-  width: 100%;
+.alerta{ 
   background:linear-gradient($gradient1,$gradient2) !important;
   border-radius: 15px;
   font-size: 12px;
@@ -657,6 +656,7 @@ ul li .mdi::before {
 
 .detalle-upload{
   z-index: 10;
+  width: 100%;
 }
 ::-webkit-file-upload-button{
   color: white;
@@ -666,6 +666,9 @@ ul li .mdi::before {
   padding: 5px 10px;
   outline: none;
 }
+
+
+
 
 .btn:hover{
   color: white;
