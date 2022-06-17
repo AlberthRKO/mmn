@@ -3,6 +3,10 @@ $(function () {
   *1. Configuración de RdNavbar 
   -------------------------------------*/
 
+  $(document).ready(function () {
+    $("#example").DataTable();
+  });
+
   rdNav = $(".rd-navbar");
 
   rdNav.RDNavbar({

@@ -18,13 +18,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.1.95/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="css/materialdesignicons.min.css">
     <link rel="stylesheet" href="libs/aos/aos.css">
+    <link rel="stylesheet" href="libs/tables/dataTables.bootstrap5.min.css">
 
     <link rel="stylesheet" href="css/estilos.css" />
 
-    <title>MMN-Clave Binaria</title>
+    <title>MMN- Clave Binaria</title>
 </head>
 
-<body style="height: 100vh;">
+<body>
     <!-- * Para el menu de navegacion e info arriba debe estar dentro de una etiqueta rd-navbar-wrap -->
 
     <header class="sliderss">
@@ -128,25 +129,27 @@
                                                             <a href="saque.html">Saque</a>
                                                         </li>
                                                         <li>
-                                                            <a href="clave_binaria.html">Clave Binaria</a>
+                                                            <a href="enviar_recibo.html">Recibo</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#">Lorem ipsum dolor</a>
+                                                            <a href="redes_binarias.html">Redes Binarias</a>
+                                                        </li>
+
+                                                        <li>
+                                                            <a href="#">Tablas</a>
                                                             <ul class="rd-navbar-dropdown list-unstyled">
                                                                 <li>
-                                                                    <a href='#'>Lorem ipsum dolor</a>
+                                                                    <a href="clave_binaria.html">Clave Binaria</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href='#'>Nulla sequi, sint</a>
+                                                                    <a href="plano_carreras.html">Plano de Carreras</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href='#'>Corporis, quos, sit</a>
+                                                                    <a href='puntos_binarios.html'>Puntos Binarios</a>
                                                                 </li>
                                                             </ul>
                                                         </li>
-                                                        <li>
-                                                            <a href="enviar_recibo.html">Recibo</a>
-                                                        </li>
+
                                                     </ul>
                                                     <!-- END RD Navbar Dropdown -->
 
@@ -155,8 +158,8 @@
                                                     <!-- crando un submenu -->
                                                     <a href="#">Pendiente</a>
                                                     <ul class="rd-navbar-dropdown list-unstyled">
-                                                        <li><a href="#">Datos pendientes</a></li>
-                                                        <li><a href="#">Soporte</a></li>
+                                                        <li><a href="pendientes.html">Pendientes</a></li>
+                                                        <li><a href="facturas.html">Facturas</a></li>
                                                         <li>
                                                             <a href="cambio_clave.html">Cambio Clave</a>
                                                         </li>
@@ -188,7 +191,7 @@
     </header>
 
     <div class="divider"></div>
-    <section id="saque" class=" header-portada d-flex justify-content-center align-items-center">
+    <section id="saque" class="d-flex justify-content-center align-items-center py-5 mt-3 my-auto">
         <div class="container">
             <div class="row justify-content-center text-center">
                 <div class="col-xl-10 p-3">
@@ -200,7 +203,7 @@
                     <div class="content py-4 px-4 position-relative">
 
                         <div class="detalle w-100 position-relative table-responsive">
-                            <table class="table table-borderless">
+                            <table id="example" class="table table-sm table-borderless">
                                 <thead class="">
                                     <tr>
                                         <th>#</th>
@@ -240,6 +243,7 @@
                                         <td>25</td>
                                         <td>0</td>
                                     </tr>
+
                                 </tbody>
                             </table>
                         </div>
@@ -252,7 +256,9 @@
 
 
 
-    <script src="libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="libs/tables/jquery-3.5.1.js"></script>
+    <script src="libs/tables/dataTables.bootstrap5.min.js"></script>
+    <script src="libs/tables/jquery.dataTables.min.js"></script>
     <script src="libs/popper.js/popper.min.js"></script>
 
     <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>

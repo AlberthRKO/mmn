@@ -16,6 +16,8 @@ $brillante: #ff6e00;
 $brillante2: #e67d2d;
 $buttongradiante1: #fe7414;
 $buttongradiante2: #fe3111;
+$badgeGradiante1:#441b67;
+$badgeGradiante2:#0fe4ae;
 $text-primary: #303036;
 $text-secondary: #63636b;
 $primary-color: #ffffff;
@@ -66,6 +68,7 @@ $display-font-sizes: (
 
 body{
   background: url('../images/back-desktop.jpg') center center / cover;
+  background-attachment: fixed;
   color: $primary-color;
 }
 .btn {
@@ -390,7 +393,7 @@ ul li .mdi::before {
 }
 
 .rd-navbar-static .rd-navbar-dropdown {
-  z-index: 5 !important;
+  z-index: 20 !important;
 }
 
 .rd-navbar-fixed .rd-navbar-submenu {
@@ -541,7 +544,6 @@ ul li .mdi::before {
   .header-portada{
     height: 96vh;
   }
-  
 }
 @media (min-width: 990px) {
   
@@ -555,7 +557,9 @@ ul li .mdi::before {
     bottom: -3px;
     box-shadow: 0px 0px 30px $brillante;
   }
-  
+  .header-portada-tablas{
+    height: 86vh;
+  }
 }
 
 
@@ -591,7 +595,7 @@ ul li .mdi::before {
 }
 
 .detalle{
-  z-index: 10;
+  z-index: 5;
 }
 
 @keyframes animate{
@@ -655,7 +659,7 @@ ul li .mdi::before {
 --------------------------- */
 
 .detalle-upload{
-  z-index: 10;
+  z-index: 5;
   width: 100%;
 }
 ::-webkit-file-upload-button{
@@ -670,7 +674,7 @@ ul li .mdi::before {
 
 
 
-.btn:hover{
+.btn-primario:hover{
   color: white;
   background: $brillante;
   background: linear-gradient(to right, $brillante, $brillante2);
@@ -679,6 +683,18 @@ ul li .mdi::before {
 .btn-primario{
   background: $brillante;
   background: linear-gradient(to right, $buttongradiante1, $buttongradiante2);
+  color: white;
+}
+.btn-secundario{
+  background: rgb(15,228,174);
+  
+  background: linear-gradient(90deg, rgba(15,228,174,1) 0%, rgba(45,113,134,1) 50%, rgba(68,27,103,1) 100%);
+  color: white;
+  transition: all .3s ease;
+}
+.btn-secundario:hover{
+  background: rgb(15,228,174);
+  background: linear-gradient(90deg, rgba(15,228,174,1) 0%, rgba(45,113,134,1) 40%, rgba(68,27,103,1) 100%);
   color: white;
 }
 
@@ -709,11 +725,125 @@ tr{
 }
 tr:hover, tr:hover tbody{
   color: white;
-  background-color: $gradient1;
+  background-color: $gradient1 !important;
 }
+
+//* Estilos para el data Table
+
+.dataTables_wrapper{
+  padding: .5rem 0;
+}
+
+table.dataTable{
+  border-collapse: collapse !important;
+}
+table.dataTable>tbody>tr {
+  background-color: #15152f;
+}
+
+.dataTables_paginate span{
+  padding: 0px 5px;
+  cursor: pointer;
+}
+.dataTables_paginate span a{
+  padding: 5px;
+  background: $gradient2;
+  color: white;
+  margin: 0px 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  text-decoration: none;
+}
+.dataTables_paginate .previous,
+.dataTables_paginate .next{
+  background: $gradient2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dataTables_wrapper .dataTables_length select{
+  background: $gradient2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 3px;
+  outline: none;
+}
+.dataTables_wrapper .dataTables_length select option{
+  border: none;
+}
+.dataTables_wrapper .dataTables_length select:hover,
+.dataTables_wrapper .dataTables_length select:focus,
+.dataTables_paginate .previous:hover,
+.dataTables_paginate .next:hover,
+.dataTables_paginate span a:hover{
+  background: $gradient1;
+}
+.dataTables_wrapper .dataTables_filter input{
+  margin-top: 10px;
+  background: $gradient2;
+  border: none;
+  padding: 3px 5px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_filter input:hover{
+  border: none;
+  background: $gradient1;
+}
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td, table.dataTable tbody td,table.dataTable tbody th {
+  text-align: left !important;
+}
+
+
+
 thead tr{
   background: linear-gradient(to right, #5e0a2e, #02121f) !important;
 }
+th{
+  white-space: nowrap;
+}
+
+
+/* ----------------------------
+*Seccion de facturas
+---------------------------- */
+
+.badge-primario{
+  background: linear-gradient(to right, #5e0a2e, $gradient2);
+  color: white;
+}
+.badge-secundario{
+  background: linear-gradient(to right, $buttongradiante1, $buttongradiante2);
+  color: white;
+}
+.badge-pagado{
+  background: linear-gradient(to right, $badgeGradiante1, $badgeGradiante2);
+  color: white;
+}
+
+/* *Seccion home 2  */
+
+.style-content{
+  border-radius: 50px 10px 10px 10px !important;
+}
+.style-content::after{
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: black;
+  border-radius: 46px 8px 8px 8px !important;
+}
+
+
+
+
 
 
 

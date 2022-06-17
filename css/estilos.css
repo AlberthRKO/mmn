@@ -11977,6 +11977,7 @@ fieldset:disabled .btn {
 
 body {
   background: url("../images/back-desktop.jpg") center center/cover;
+  background-attachment: fixed;
   color: #ffffff;
 }
 
@@ -12322,7 +12323,7 @@ ul li .mdi::before {
 }
 
 .rd-navbar-static .rd-navbar-dropdown {
-  z-index: 5 !important;
+  z-index: 20 !important;
 }
 
 .rd-navbar-fixed .rd-navbar-submenu {
@@ -12487,6 +12488,9 @@ ul li .mdi::before {
     -webkit-box-shadow: 0px 0px 30px #ff6e00;
             box-shadow: 0px 0px 30px #ff6e00;
   }
+  .header-portada-tablas {
+    height: 86vh;
+  }
 }
 
 /*---------------------------------
@@ -12529,7 +12533,7 @@ ul li .mdi::before {
 }
 
 .detalle {
-  z-index: 10;
+  z-index: 5;
 }
 
 @-webkit-keyframes animate {
@@ -12575,7 +12579,7 @@ ul li .mdi::before {
 * Seccion de Recibo
 --------------------------- */
 .detalle-upload {
-  z-index: 10;
+  z-index: 5;
   width: 100%;
 }
 
@@ -12589,7 +12593,7 @@ ul li .mdi::before {
   outline: none;
 }
 
-.btn:hover {
+.btn-primario:hover {
   color: white;
   background: #ff6e00;
   background: -webkit-gradient(linear, left top, right top, from(#ff6e00), to(#e67d2d));
@@ -12600,6 +12604,22 @@ ul li .mdi::before {
   background: #ff6e00;
   background: -webkit-gradient(linear, left top, right top, from(#fe7414), to(#fe3111));
   background: linear-gradient(to right, #fe7414, #fe3111);
+  color: white;
+}
+
+.btn-secundario {
+  background: #0fe4ae;
+  background: -webkit-gradient(linear, left top, right top, from(#0fe4ae), color-stop(50%, #2d7186), to(#441b67));
+  background: linear-gradient(90deg, #0fe4ae 0%, #2d7186 50%, #441b67 100%);
+  color: white;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.btn-secundario:hover {
+  background: #0fe4ae;
+  background: -webkit-gradient(linear, left top, right top, from(#0fe4ae), color-stop(40%, #2d7186), to(#441b67));
+  background: linear-gradient(90deg, #0fe4ae 0%, #2d7186 40%, #441b67 100%);
   color: white;
 }
 
@@ -12628,12 +12648,129 @@ tr {
 
 tr:hover, tr:hover tbody {
   color: white;
-  background-color: #003353;
+  background-color: #003353 !important;
+}
+
+.dataTables_wrapper {
+  padding: .5rem 0;
+}
+
+table.dataTable {
+  border-collapse: collapse !important;
+}
+
+table.dataTable > tbody > tr {
+  background-color: #15152f;
+}
+
+.dataTables_paginate span {
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.dataTables_paginate span a {
+  padding: 5px;
+  background: #15152f;
+  color: white;
+  margin: 0px 5px;
+  border-radius: 5px;
+  font-size: 8px;
+  text-decoration: none;
+}
+
+.dataTables_paginate .previous,
+.dataTables_paginate .next {
+  background: #15152f;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 12px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.dataTables_wrapper .dataTables_length select {
+  background: #15152f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 3px;
+  outline: none;
+}
+
+.dataTables_wrapper .dataTables_length select option {
+  border: none;
+}
+
+.dataTables_wrapper .dataTables_length select:hover,
+.dataTables_wrapper .dataTables_length select:focus,
+.dataTables_paginate .previous:hover,
+.dataTables_paginate .next:hover,
+.dataTables_paginate span a:hover {
+  background: #003353;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  margin-top: 10px;
+  background: #15152f;
+  border: none;
+  padding: 3px 5px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus,
+.dataTables_wrapper .dataTables_filter input:hover {
+  border: none;
+  background: #003353;
+}
+
+table.dataTable thead th, table.dataTable thead td, table.dataTable tfoot th, table.dataTable tfoot td, table.dataTable tbody td, table.dataTable tbody th {
+  text-align: left !important;
 }
 
 thead tr {
   background: -webkit-gradient(linear, left top, right top, from(#5e0a2e), to(#02121f)) !important;
   background: linear-gradient(to right, #5e0a2e, #02121f) !important;
+}
+
+th {
+  white-space: nowrap;
+}
+
+/* ----------------------------
+*Seccion de facturas
+---------------------------- */
+.badge-primario {
+  background: -webkit-gradient(linear, left top, right top, from(#5e0a2e), to(#15152f));
+  background: linear-gradient(to right, #5e0a2e, #15152f);
+  color: white;
+}
+
+.badge-secundario {
+  background: -webkit-gradient(linear, left top, right top, from(#fe7414), to(#fe3111));
+  background: linear-gradient(to right, #fe7414, #fe3111);
+  color: white;
+}
+
+.badge-pagado {
+  background: -webkit-gradient(linear, left top, right top, from(#441b67), to(#0fe4ae));
+  background: linear-gradient(to right, #441b67, #0fe4ae);
+  color: white;
+}
+
+/* *Seccion home 2  */
+.style-content {
+  border-radius: 50px 10px 10px 10px !important;
+}
+
+.style-content::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  background: black;
+  border-radius: 46px 8px 8px 8px !important;
 }
 
 /* -----------------------------
