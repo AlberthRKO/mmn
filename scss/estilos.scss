@@ -932,6 +932,53 @@ select:-webkit-autofill:focus {
 }
 
 
+// Seccion de backOfice
+.linea{
+  margin-right: 0;
+  width: 75%;
+  height: 2px;
+  background: linear-gradient(to right, black, $badgeGradiante2);
+  margin: 0 0 0 auto;
+}
+.colorIcon{
+  background: linear-gradient(to right, $badgeGradiante2, $badgeGradiante1);
+  -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+.verIcon {
+  margin: 0;
+  font-size: 6rem;
+  padding: 0;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+.verIcon i{ 
+	background:-moz-linear-gradient(to right, $badgeGradiante2, $badgeGradiante1); 
+    background: -webkit-linear-gradient(to right, $badgeGradiante2, $badgeGradiante1); 
+    background: linear-gradient(to right, $badgeGradiante2, $badgeGradiante1);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+   -webkit-text-fill-color:transparent;
+  }
+// .way_icon .mdi::before{
+//   font-size: 6rem !important;
+//   line-height: 0;
+// }
+.verIcon .mdi::before{
+  font-size: 6rem;
+}
+.direcciones li a{
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+
 
 
 

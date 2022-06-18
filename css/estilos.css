@@ -12848,6 +12848,55 @@ select:-webkit-autofill:focus {
   transition: background-color 5000s ease-in-out 0s;
 }
 
+.linea {
+  margin-right: 0;
+  width: 75%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(#0fe4ae));
+  background: linear-gradient(to right, black, #0fe4ae);
+  margin: 0 0 0 auto;
+}
+
+.colorIcon {
+  background: -webkit-gradient(linear, left top, right top, from(#0fe4ae), to(#441b67));
+  background: linear-gradient(to right, #0fe4ae, #441b67);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.verIcon {
+  margin: 0;
+  font-size: 6rem;
+  padding: 0;
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.verIcon i {
+  background: -webkit-gradient(linear, left top, right top, from(#0fe4ae), to(#441b67));
+  background: linear-gradient(to right, #0fe4ae, #441b67);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.verIcon .mdi::before {
+  font-size: 6rem;
+}
+
+.direcciones li a {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 15px;
+}
+
 /* -----------------------------
  *Seccion del slider 
 -------------------------------- */
