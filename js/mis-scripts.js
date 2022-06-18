@@ -2,6 +2,7 @@ $(function () {
   /* ------------------------------------
   *1. Configuración de RdNavbar 
   -------------------------------------*/
+  AOS.init();
 
   $(document).ready(function () {
     $("#example").DataTable();
@@ -67,6 +68,4 @@ $(function () {
       },
     },
   });
-
-  AOS.init();
 });
